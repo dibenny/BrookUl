@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Highlight Selected Date Range</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="calendar"></div>
+
+<script src="simple-calendar.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var calendar = new SimpleCalendar('#calendar');
+
+    var startDate = null;
+    var endDate = null;
+
+    // Event listener for when a date is clicked
+    calendar.onDateClick(function(date) {
+        if (!startDate) {
+            startDate = date;
+            calendar.highlightDate(date);
+        } else if (!endDate) {
+            endDate = date;
+            calendar.highlightDate(date);
+            highlightDateRange(startDate, endDate);
+        } else {
+            startDate = date;
+            endDate = null;
+            calendar.removeAllHighlights();
+            calendar.highlightDate(date);
+        }
+    });
+
+    // Function to highlight the date range between start and end dates
+    function highlightDateRange(start, end) {
+        // Iterate through each date in the calendar and highlight those in range
+        calendar.iterateDates(function(date) {
+            if (date >= start && date <= end) {
+                calendar.highlightDate(date);
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
