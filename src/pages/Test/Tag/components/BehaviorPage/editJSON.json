@@ -1,0 +1,202 @@
+[
+    {
+      "alias": "temp1724651241927",
+      "children": [
+        {
+          "alias": "temp1724651241927",
+          "metric": [
+            {
+              "alias": "temp1724651250238",
+              "componentType": "string",
+              "attrName": "bizNo",
+              "component": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "value",
+                  "children": {
+                    "type": {
+                      "Search": {},
+                      "TextArea": {},
+                      "Password": {},
+                      "OTP": {}
+                    },
+                    "key": null,
+                    "ref": null,
+                    "props": { "placeholder": "输入", "style": { "width": 80 } },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                },
+                "_owner": null,
+                "_store": {}
+              },
+              "operator": "=",
+              "value": "11"
+            },
+            {
+              "alias": "temp1724651250774",
+              "componentType": "string",
+              "attrName": "bizNo",
+              "component": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "value",
+                  "children": {
+                    "type": {
+                      "Search": {},
+                      "TextArea": {},
+                      "Password": {},
+                      "OTP": {}
+                    },
+                    "key": null,
+                    "ref": null,
+                    "props": { "placeholder": "输入", "style": { "width": 80 } },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                },
+                "_owner": null,
+                "_store": {}
+              },
+              "operator": "<>",
+              "value": "22"
+            }
+          ],
+          "metricType": "AND",
+          "tableName": " select  main.tiaoxian, dim2.pt, dim2.data, main.um, dim5.bizNo, dim5.buyDate, dim5.chainId, dim5.itemId, main.workno, main.name, main.pt from  hive2.jkgj_log.rpt_test_craftman_to_doris_task main  left join bi.ads_test_dori_123 dim2  on  main.tiaoxian =  dim2.data left join bi.ads_test_doris_456 dim5  on  main.um =  dim5.bizNo where  main.workno >=  '20240825'   and  main.workno <=  '20240826'  ",
+          "relateFiled": "workno",
+          "backFiled": ["workno"]
+        },
+        {
+          "alias": "temp1724651269093",
+          "metric": [
+            {
+              "alias": "temp1724651276993",
+              "componentType": "string",
+              "attrName": "bizNo",
+              "component": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "value",
+                  "children": {
+                    "type": {
+                      "Search": {},
+                      "TextArea": {},
+                      "Password": {},
+                      "OTP": {}
+                    },
+                    "key": null,
+                    "ref": null,
+                    "props": { "placeholder": "输入", "style": { "width": 80 } },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                },
+                "_owner": null,
+                "_store": {}
+              },
+              "operator": "=",
+              "value": "33"
+            }
+          ],
+          "showTimeSelector": true,
+          "timeValue": {
+            "startTime": "2024-07-27 13:46:55",
+            "endTime": "2024-08-26 13:46:55"
+          },
+          "tableName": " select  main.timestamp, dim2.pt, dim2.data, main.type, dim5.bizNo, dim5.buyDate, dim5.chainId, dim5.itemId, main.error_code, main.error_msg, dim7.data, dim7.pt, main.op_id from  bi.ads_test_duplicate main  left join bi.ads_test_dori_123 dim2  on  main.timestamp =  dim2.data left join bi.ads_test_doris_456 dim5  on  main.type =  dim5.bizNo left join bi.ads_test_dori_123 dim7  on  main.error_msg =  dim7.data where  main.timestamp >=  '20240825'   and  main.timestamp <=  '20240826'  ",
+          "relateFiled": "timestamp",
+          "backFiled": ["timestamp"]
+        }
+      ],
+      "metricType": "AND",
+      "relateFiled": "timestamp",
+      "backFiled": ["timestamp"]
+    },
+    {
+      "alias": "temp1724651242744",
+      "children": [
+        {
+          "alias": "temp1724651242744",
+          "metric": [
+            {
+              "alias": "temp1724651285113",
+              "componentType": "string",
+              "attrName": "bizNo",
+              "component": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "value",
+                  "children": {
+                    "type": {
+                      "Search": {},
+                      "TextArea": {},
+                      "Password": {},
+                      "OTP": {}
+                    },
+                    "key": null,
+                    "ref": null,
+                    "props": { "placeholder": "输入", "style": { "width": 80 } },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                },
+                "_owner": null,
+                "_store": {}
+              },
+              "operator": "<>",
+              "value": "44"
+            }
+          ],
+          "tableName": " select  main.timestamp, dim2.pt, dim2.data, main.type, dim5.bizNo, dim5.buyDate, dim5.chainId, dim5.itemId, main.error_code, main.error_msg, dim7.data, dim7.pt, main.op_id from  bi.ads_test_duplicate main  left join bi.ads_test_dori_123 dim2  on  main.timestamp =  dim2.data left join bi.ads_test_doris_456 dim5  on  main.type =  dim5.bizNo left join bi.ads_test_dori_123 dim7  on  main.error_msg =  dim7.data where  main.timestamp >=  '20240825'   and  main.timestamp <=  '20240826'  ",
+          "relateFiled": "timestamp",
+          "backFiled": ["timestamp"]
+        },
+        {
+          "alias": "temp1724651246080",
+          "metric": [
+            {
+              "alias": "temp1724651295518",
+              "componentType": "string",
+              "attrName": "bizNo",
+              "component": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "value",
+                  "children": {
+                    "type": {
+                      "Search": {},
+                      "TextArea": {},
+                      "Password": {},
+                      "OTP": {}
+                    },
+                    "key": null,
+                    "ref": null,
+                    "props": { "placeholder": "输入", "style": { "width": 80 } },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                },
+                "_owner": null,
+                "_store": {}
+              },
+              "operator": "<>",
+              "value": "55"
+            }
+          ],
+          "showTimeSelector": false,
+          "tableName": " select  main.timestamp, dim2.pt, dim2.data, main.type, dim5.bizNo, dim5.buyDate, dim5.chainId, dim5.itemId, main.error_code, main.error_msg, dim7.data, dim7.pt, main.op_id from  bi.ads_test_duplicate main  left join bi.ads_test_dori_123 dim2  on  main.timestamp =  dim2.data left join bi.ads_test_doris_456 dim5  on  main.type =  dim5.bizNo left join bi.ads_test_dori_123 dim7  on  main.error_msg =  dim7.data where  main.timestamp >=  '20240825'   and  main.timestamp <=  '20240826'  ",
+          "relateFiled": "timestamp",
+          "backFiled": ["timestamp"]
+        }
+      ],
+      "metricType": "AND",
+      "relateFiled": "timestamp",
+      "backFiled": ["timestamp"]
+    }
+  ]
