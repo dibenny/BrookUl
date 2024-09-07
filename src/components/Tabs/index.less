@@ -1,0 +1,103 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-list-container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tab-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-list {
+  display: inline-flex;
+  border-bottom: 2px solid #f3f3f3;
+  align-items: center;
+  width: 100%;
+  // background-color: hotpink;
+}
+
+.tab {
+  background-color: transparent; 
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  // background-color: #00bf8a;
+  border-bottom: 2px solid #00bf8a;
+  color: #00bf8a;
+}
+
+.delete-tab {
+  color: #000;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.tab.delete-tabs {
+  color: #fff;
+}
+.scroll-button {
+  background-color: #00bf8a;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.scroll-button.left {
+  border-radius: 5px 0 0 5px;
+}
+
+.scroll-button.right {
+  border-radius: 0 5px 5px 0;
+}
+
+.add-tab-button {
+  background-color: #00bf8a;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.tab-list-delete{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.tab-active-button{
+  align-items: center;
+}
+
+.mt-right-10{
+  margin-right: 5px;
+}
+.mt-left-5{
+  margin-left: 5px;
+}
+.df-row{
+  display: flex;
+  flex-direction: row;
+}

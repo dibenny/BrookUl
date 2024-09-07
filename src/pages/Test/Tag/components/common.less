@@ -1,0 +1,69 @@
+.container {
+    margin: 10px 0;
+  }
+  
+  .box-wrap-common {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  // '且' 的样式
+  .wire-box-common {
+    position: relative;
+    padding-left: 25px;
+  
+    .icon-common {
+      position: absolute;
+      top: 40%;
+      left: -12px;
+      z-index: 10;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 25px;
+      height: 25px;
+      color: #2a7afb;
+      font-size: 12px;
+      font-family: PingFangSC-Regular;
+      line-height: 25px;
+      text-align: center;
+      background: #e6f3fe;
+      border: 1px solid #e6f3fe;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  
+    .line-common {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 1px;
+      height: calc(100% - 40px);
+      // background-color: red;
+      border-left: 2px solid #e6f3fe;
+    }
+  }
+  
+  /* 在样式文件中添加以下样式 */
+  .collapsible-collapse .ant-collapse-item {
+    border: none;
+  }
+  
+  .collapsible-subitem {
+    position: relative;
+  }
+  
+  .condition-addition {
+    cursor: pointer;
+  }
+  
+  .condition-addition:hover {
+    color: #1678ff;
+  }
+  
+  .minus-circle-outlined {
+    cursor: pointer;
+  }
+  
+  .minus-circle-outlined:hover {
+    color: red;
+  }

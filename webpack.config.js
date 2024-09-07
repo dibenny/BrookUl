@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
+
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'brook-ui.js', // 修改成你想要的输出文件名，例如 brook-ui.js
